@@ -1,0 +1,157 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  background-image: url(./images/image.jpg);
+  /* background: red; */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+body::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: rgba(0, 22, 40, 0.549);
+  z-index: -1;
+}
+
+.container {
+  width: 90vmin;
+  background: #03001e;
+  background: -webkit-linear-gradient(
+    to right,
+    #46acff,
+    #46acff,
+    #7303c0,
+    #03001e
+  );
+  background: linear-gradient(to right, #46acff, #46acff, #7303c0, #03001e);
+
+  border-radius: 15px;
+  padding: 70px 40px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  box-shadow: 10px 20px 40px rgba(162, 255, 252, 0.5);
+}
+
+.search-box {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.search-box input {
+  width: 70%;
+  padding: 14px 25px;
+  padding-left: 15px;
+  border: none;
+  outline: none;
+  border-radius: 20px;
+  color: black;
+  font-weight: 700;
+}
+
+.search-box #search-btn {
+  padding: 14px 45px;
+  border: none;
+  border-radius: 20px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  font-size: 15px;
+  cursor: pointer;
+  background: #03001e;
+  background: -webkit-linear-gradient(
+    to right,
+    #46acff,
+    #46acff,
+    #7303c0,
+    #7303c0
+  );
+  background: linear-gradient(to right, #46acff, #46acff, #7303c0, #7303c0);
+  color: white;
+  transition: all 0.6s;
+}
+
+.search-box #search-btn:hover {
+  background: #1900ff;
+  background: -webkit-linear-gradient(
+    to right,
+    #46acff,
+    #044c88,
+    #450073,
+    #7303c0
+  );
+  background: linear-gradient(to right, #46acff, #044c88, #450073, #7303c0);
+}
+
+.result {
+  position: relative;
+  color: black;
+padding-inline: 10px;
+}
+.result .word {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 40px;
+}
+.result .word h3 {
+font-size: 30px;
+color: #ffffff;
+}
+.result .word button {
+  background: transparent;
+  color: #c265ff;
+  border: none;
+  outline: none;
+  font-size: 20px;
+  cursor: pointer;
+}
+.result .details {
+  display: flex;
+  gap: 15px;
+  margin: 8px 0 20px 0;
+  font-size: 14px;
+  color: #494949;
+}
+.word-meaning {
+  color: #ffffff;
+  text-align: left;
+}
+.word-example{
+  color: #ffffff;
+  font-style: italic;
+  border-left: 5px solid #ae9cff;
+  padding-left: 30px;
+  margin-top: 30px;
+  text-align: left;
+}
+.error {
+  margin-top: 80px;
+  text-align: center;
+}
+h5 {
+  font-weight: 600;
+  position: absolute;
+  bottom: 5px;
+  text-transform: capitalize;
+  color: white;
+}
