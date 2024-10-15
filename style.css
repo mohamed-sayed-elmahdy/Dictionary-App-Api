@@ -148,10 +148,20 @@ color: #ffffff;
   margin-top: 80px;
   text-align: center;
 }
-h5 {
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+footer p {
   font-weight: 600;
   position: absolute;
   bottom: 5px;
   text-transform: capitalize;
   color: white;
+  font-size: 13px;
+}
+footer p span {
+  font-weight: 800;
 }
